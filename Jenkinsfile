@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/MUKERA-NITHISHA/Arduino-CI-CD.git'
+                git branch: 'main', url: 'https://github.com/MUKERA-NITHISHA/Arduino-CI-CD.git'
             }
         }
 
@@ -27,4 +27,3 @@ pipeline {
         }
     }
 }
-
